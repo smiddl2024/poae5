@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Applied Engineering Hub</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+  <!-- Navigation -->
+  <nav class="bg-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0">
+            <span class="text-2xl font-bold text-indigo-600">Engage<span class="text-gray-800">Hub</span></span>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-4">
+            <a href="#home" class="nav-link text-gray-600 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+            <a href="#projects" class="nav-link text-gray-600 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Projects</a>
+            <a href="#competitions" class="nav-link text-gray-600 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Competitions</a>
+            <a href="#portfolio" class="nav-link text-gray-600 hover:bg-indigo-600 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+          </div>
+        </div>
+        <div class="-mr-2 flex md:hidden">
+          <button type="button" id="mobile-menu-button" class="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            <svg class="hidden h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <a href="#home" class="nav-link text-gray-600 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium">Home</a>
+        <a href="#projects" class="nav-link text-gray-600 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+        <a href="#competitions" class="nav-link text-gray-600 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium">Competitions</a>
+        <a href="#portfolio" class="nav-link text-gray-600 hover:bg-gray-200 hover:text-black block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+      </div>
+    </div>
+  </nav>
+
+  <div id="main-content-container">
+    <main>
+      <!-- Home -->
+      <section id="home" class="bg-indigo-600 text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h1 class="text-4xl font-extrabold tracking-tight sm:text-5xl md:text-6xl">Learn the Fundamentals</h1>
+            <p class="mt-6 max-w-3xl mx-auto text-xl text-indigo-200">Engineering is about solving problems. Strengthen your knowledge with these key concepts to become a master builder.</p>
+          </div>
+          <div class="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <a href="#" id="learn-design-process-link" class="block transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-indigo-700 p-6 rounded-lg shadow-lg h-full">
+                <h3 class="text-xl font-semibold text-white">The Engineering Design Process</h3>
+                <p class="mt-2 text-indigo-200">Learn the systematic approach engineers use to solve problems, from identifying a need to testing and improving a solution.</p>
+              </div>
+            </a>
+            <a href="#" id="learn-simple-machines-link" class="block transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-indigo-700 p-6 rounded-lg shadow-lg h-full">
+                <h3 class="text-xl font-semibold text-white">Simple Machines</h3>
+                <p class="mt-2 text-indigo-200">Discover the six classical simple machines and how they form the building blocks of more complex machinery.</p>
+              </div>
+            </a>
+            <a href="#" id="learn-circuits-link" class="block transform hover:scale-105 transition-transform duration-300">
+              <div class="bg-indigo-700 p-6 rounded-lg shadow-lg h-full">
+                <h3 class="text-xl font-semibold text-white">Introduction to Circuits</h3>
+                <p class="mt-2 text-indigo-200">Explore the basics of electricity, including circuits, components like resistors and LEDs, and how to read schematics.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="text-center">
+            <h2 class="text-3xl font-extrabold text-gray-900">Project Roadmap</h2>
+            <p class="mt-4 text-lg text-gray-600">Complete projects in order to unlock the next challenge!</p>
+          </div>
+
+          <!-- Semester 1 -->
+          <div class="mt-12">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Semester 1</h3>
+
+            <!-- Term 1 -->
+            <div class="mb-10">
+              <h4 class="text-xl font-semibold text-indigo-700 mb-4">Term 1: Foundations of Design</h4>
+              <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col justify-between">
+                  <div>
+                    <h5 class="text-lg font-bold text-gray-900">1. Paper Airplane Design</h5>
+                    <p class="mt-2 text-gray-600">Master the forces of flight by designing, building, and testing the ultimate paper airplane.</p>
+                  </div>
+                  <button id="start-airplane-project-btn" class="mt-4 w-full bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg shadow-md hover:bg-indigo-700 text-center">Start Project</button>
+                </div>
+
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">2. Paper Compression Test</h5>
+                    <p class="mt-2 text-sm">Discover material strength by testing how much weight a simple paper column can hold.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">3. Origami Chair Challenge</h5>
+                    <p class="mt-2 text-sm">Apply folding techniques to create a functional, weight-bearing chair from a single sheet of material.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Term 2 -->
+            <div>
+              <h4 class="text-xl font-semibold text-indigo-700 mb-4">Term 2: Structures & Mechanisms</h4>
+              <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">4. Cardboard Structures</h5>
+                    <p class="mt-2 text-sm">Design and build a large-scale cardboard structure capable of supporting significant weight.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">5. Popsicle Stick Catapults</h5>
+                    <p class="mt-2 text-sm">Explore potential and kinetic energy by constructing a catapult to launch a projectile the farthest.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">6. Bridge Building</h5>
+                    <p class="mt-2 text-sm">Use popsicle sticks to engineer the most efficient bridge that can withstand the maximum load.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semester 2 -->
+          <div class="mt-16">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6">Semester 2</h3>
+
+            <div class="mb-10">
+              <h4 class="text-xl font-semibold text-indigo-700 mb-4">Term 3: Introduction to Electronics</h4>
+              <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">7. Simple Circuits</h5>
+                    <p class="mt-2 text-sm">Learn the fundamentals of electricity by creating working circuits with circuit stickers.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">8. Useless Machine</h5>
+                    <p class="mt-2 text-sm">Build a whimsical machine that turns itself off, mastering switches, motors, and logic.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">9. Wearable Programmable LED</h5>
+                    <p class="mt-2 text-sm">Combine electronics and textiles to create a piece of wearable tech that lights up with code.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h4 class="text-xl font-semibold text-indigo-700 mb-4">Term 4: Advanced Systems & CAD</h4>
+              <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">10. 3D Printed Airplanes</h5>
+                    <p class="mt-2 text-sm">Use computer-aided design (CAD) to model and 3D print a functional glider.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">11. 3D Printed Rubber Band Car</h5>
+                    <p class="mt-2 text-sm">Design, print, and assemble a car powered by the potential energy of a rubber band.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">12. Servo Security Lock</h5>
+                    <p class="mt-2 text-sm">Design a secure locking mechanism controlled by a servo motor and a secret code.</p>
+                  </div>
+                </div>
+                <div class="bg-gray-200 rounded-lg shadow-inner p-6 flex items-center justify-center">
+                  <div class="text-center text-gray-500">
+                    <i class="fas fa-lock text-2xl mb-2"></i>
+                    <h5 class="text-lg font-bold">13. Micro:bit Robotic Arm</h5>
+                    <p class="mt-2 text-sm">Build and program a robotic arm that can be controlled by your own muscle signals (EMG).</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Competitions -->
+      <section id="competitions" class="py-20">...</section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="bg-indigo-50 py-20">...</section>
+    </main>
+  </div>
+
+  <!-- Sub-Pages (Hidden by Default) -->
+  <div id="design-process-page" class="hidden">...</div>
+  <div id="simple-machines-page" class="hidden">...</div>
+  <div id="circuits-page" class="hidden">...</div>
+
+  <!-- Paper Airplane Project Pages -->
+  <div id="airplane-day1-page" class="hidden bg-gray-50 py-12 sm:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <a href="#" class="back-to-main inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Back to Project Hub
+        </a>
+      </div>
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Paper Airplane Challenge</h2>
+        <h3 class="text-2xl font-bold text-gray-800 p-4 bg-indigo-100 rounded-lg mt-4">Day 1: Research & Brainstorm</h3>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Today's Objectives (TEKS §130.364)</h4>
+        <ul class="mt-2 list-disc list-inside text-gray-700">
+          <li>Define the problem's criteria and constraints. (c)(1)(A)</li>
+          <li>Research and understand the scientific principles (aerodynamics) behind the problem. (c)(1)(D)</li>
+          <li>Brainstorm and sketch multiple possible solutions. (c)(1)(E)</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Concept 1: The Design Process - "Ask & Brainstorm"</h4>
+        <p class="mt-2 text-gray-700">
+          Every engineering project starts with questions. We need to understand the problem, the rules, and the goal.
+          This is the <strong>"Ask &amp; Identify"</strong> phase. Once we understand the challenge, we move to
+          <strong>"Imagine &amp; Brainstorm"</strong>, where we come up with as many creative ideas as possible without judgment.
+          A good engineer explores multiple paths before choosing one.
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Concept 2: Aerodynamics - The Four Forces of Flight</h4>
+        <p class="mt-2 text-gray-700">
+          For an airplane to fly, four forces must be in balance:
+          <br><strong>Lift:</strong> The upward force created by air moving over the wings.
+          <br><strong>Weight:</strong> The downward force of gravity pulling the plane down.
+          <br><strong>Thrust:</strong> The forward force that pushes the plane through the air (from your throw!).
+          <br><strong>Drag:</strong> The backward force of air resistance that slows the plane down.
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Knowledge Check!</h4>
+        <div id="quiz1">
+          <p class="mt-2 text-gray-700">Which force is the main enemy of a paper airplane's distance?</p>
+          <div class="mt-2 space-y-2">
+            <button onclick="checkAnswer(1, false, 'A) Lift')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">A) Lift</button>
+            <button onclick="checkAnswer(1, true, 'B) Drag')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">B) Drag</button>
+            <button onclick="checkAnswer(1, false, 'C) Thrust')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">C) Thrust</button>
+          </div>
+          <p id="feedback1" class="mt-2 text-sm font-semibold"></p>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Day 1 Assignment & Design Log</h4>
+        <div class="mt-6 space-y-6">
+          <div>
+            <label class="block font-semibold text-gray-800">1. Define Lift & Drag</label>
+            <p class="text-sm text-gray-500 mb-2">In your own words, what is the difference between lift and drag?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="Lift is the force that... Drag is the force that..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">2. Define Your Goal</label>
+            <p class="text-sm text-gray-500 mb-2">What is the main goal of this project? What are you trying to achieve?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="My goal is to design a paper airplane that..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">3. Identify Constraints</label>
+            <p class="text-sm text-gray-500 mb-2">What are the two main rules (constraints) you must follow for this project?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="1. I can only use... 2. I cannot use..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">4. Make a Prediction</label>
+            <p class="text-sm text-gray-500 mb-2">Look at your three sketches. Which one do you predict will fly the farthest and why? (This is your first hypothesis!)</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="I predict design #... will fly farthest because its wings are..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">5. Log Your Sketches</label>
+            <p class="text-sm text-gray-500 mb-2">Upload a single, clear photo of your three different airplane sketches.</p>
+            <input type="file" multiple class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"/>
+          </div>
+        </div>
+        <div class="mt-8 text-right">
+          <button class="next-day-btn bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">Save & Continue to Day 2</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="airplane-day2-page" class="hidden bg-gray-50 py-12 sm:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <a href="#" class="back-to-main inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Back to Project Hub
+        </a>
+      </div>
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Paper Airplane Challenge</h2>
+        <h3 class="text-2xl font-bold text-gray-800 p-4 bg-indigo-100 rounded-lg mt-4">Day 2: Build & Observe</h3>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Today's Objectives (TEKS §130.364)</h4>
+        <ul class="mt-2 list-disc list-inside text-gray-700">
+          <li>Create physical prototypes based on your sketches. (c)(1)(F)</li>
+          <li>Collect qualitative data through observation. (c)(1)(G)</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Concept 1: The Design Process - "Create"</h4>
+        <p class="mt-2 text-gray-700">This is the <strong>"Create"</strong> phase, where we build our first working models, called <strong>prototypes</strong>. The goal of a prototype isn't to be perfect; it's to learn from. By building three different designs, we can quickly see which ideas work well and which ones don't.</p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Concept 2: Aerodynamics - Stability</h4>
+        <p class="mt-2 text-gray-700">
+          A good plane is a stable plane. Stability is affected by the <strong>Center of Gravity</strong> (the balance point of the plane's weight) and the <strong>Center of Pressure</strong> (the balance point of the lift from the wings). If the center of gravity is too far back, the plane will be unstable and stall. If it's too far forward, it will nosedive.
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Concept 3: Tutorial - How to Fold a Classic Dart</h4>
+        <p class="mt-2 text-gray-700">If you're not sure where to start, here's how to fold a simple, reliable plane. You can use this as one of your three prototypes to have a good baseline for comparison.</p>
+        <div class="mt-4 grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="p-2 border rounded-lg">
+            <img src="https://i.imgur.com/L5d5j8d.png" class="w-full rounded" alt="Step 1: Fold paper in half lengthwise">
+            <p class="mt-2 text-sm">1. Fold in half lengthwise.</p>
+          </div>
+          <div class="p-2 border rounded-lg">
+            <img src="https://i.imgur.com/sFmY3bB.png" class="w-full rounded" alt="Step 2: Fold top corners to the center line">
+            <p class="mt-2 text-sm">2. Fold top corners to the center.</p>
+          </div>
+          <div class="p-2 border rounded-lg">
+            <img src="https://i.imgur.com/1Z4Zz3e.png" class="w-full rounded" alt="Step 3: Fold the new top edges to the center line again">
+            <p class="mt-2 text-sm">3. Fold the new top edges to the center.</p>
+          </div>
+          <div class="p-2 border rounded-lg">
+            <img src="https://i.imgur.com/s6b7O2s.png" class="w-full rounded" alt="Step 4: Fold the wings down to create the final plane shape">
+            <p class="mt-2 text-sm">4. Fold the wings down.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Knowledge Check!</h4>
+        <div id="quiz2">
+          <p class="mt-2 text-gray-700">If your plane keeps doing backflips and stalling, where should you add a little weight (like a paperclip)?</p>
+          <div class="mt-2 space-y-2">
+            <button onclick="checkAnswer(2, true, 'A) The nose')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">A) The nose</button>
+            <button onclick="checkAnswer(2, false, 'B) The tail')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">B) The tail</button>
+            <button onclick="checkAnswer(2, false, 'C) The wingtips')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">C) The wingtips</button>
+          </div>
+          <p id="feedback2" class="mt-2 text-sm font-semibold"></p>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-indigo-600">Day 2 Assignment & Design Log</h4>
+        <div class="mt-6 space-y-6">
+          <div>
+            <label class="block font-semibold text-gray-800">1. Folding Process</label>
+            <p class="text-sm text-gray-500 mb-2">Which of your three prototypes was the easiest to fold accurately? Which was the most difficult? Why?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="Design #... was easiest because..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">2. Flight Observation #1</label>
+            <p class="text-sm text-gray-500 mb-2">Describe the flight of Prototype #1. Was it stable? Did it dive, stall, or turn?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="Prototype #1 flew..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">3. Flight Observation #2</label>
+            <p class="text-sm text-gray-500 mb-2">Describe the flight of Prototype #2. How was it different from #1?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="Prototype #2 was different because..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">4. Flight Observation #3</label>
+            <p class="text-sm text-gray-500 mb-2">Describe the flight of Prototype #3. Which of the three seemed the most promising for distance?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="Prototype #3... I think #... is the most promising because..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">5. Log Your Prototypes</label>
+            <p class="text-sm text-gray-500 mb-2">Upload a single, clear photo of your three completed prototypes.</p>
+            <input type="file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"/>
+          </div>
+        </div>
+        <div class="mt-8 text-right">
+          <button class="next-day-btn bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-indigo-700 transition duration-300">Save & Continue to Day 3</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="airplane-day3-page" class="hidden bg-gray-50 py-12 sm:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <a href="#" class="back-to-main inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Back to Project Hub
+        </a>
+      </div>
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Paper Airplane Challenge</h2>
+        <h3 class="text-2xl font-bold text-gray-800 p-4 bg-green-100 rounded-lg mt-4">Day 3: Analyze & Iterate</h3>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Today's Objectives (TEKS §130.364)</h4>
+        <ul class="mt-2 list-disc list-inside text-gray-700">
+          <li>Analyze test results to identify flaws and opportunities for improvement. (c)(1)(H)</li>
+          <li>Modify or redesign a solution based on test data (Iterate). (c)(1)(I)</li>
+          <li>Collect quantitative data using appropriate tools (e.g., measuring tape). (c)(2)(C)</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Concept 1: The Design Process - "Test, Evaluate, & Improve"</h4>
+        <p class="mt-2 text-gray-700">
+          This is the heart of engineering! <strong>"Test &amp; Evaluate"</strong> means we collect data—not just opinions, but real numbers.
+          <strong>"Improve"</strong> (or <strong>Iterate</strong>) means we use that data to make one small, smart change to our design.
+          By changing only one thing at a time, we can know for sure if our change helped or hurt performance.
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Concept 2: Aerodynamics - Wing Shape</h4>
+        <p class="mt-2 text-gray-700">
+          The shape of the wings is critical. <strong>Long, narrow wings</strong> (like a glider) are great for long, slow flights because they generate a lot of lift.
+          <strong>Short, wide wings</strong> (like a jet fighter) are better for high speed and stability.
+          The angle of the wings also matters. Wings angled slightly up (<strong>dihedral</strong>) add stability, while wings angled down (<strong>anhedral</strong>) can make a plane more maneuverable.
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Knowledge Check!</h4>
+        <div id="quiz3">
+          <p class="mt-2 text-gray-700">To make your plane more stable and less wobbly, what should you do to the wings?</p>
+          <div class="mt-2 space-y-2">
+            <button onclick="checkAnswer(3, false, 'A) Fold them down (anhedral)')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">A) Fold them down (anhedral)</button>
+            <button onclick="checkAnswer(3, false, 'B) Make them shorter')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">B) Make them shorter</button>
+            <button onclick="checkAnswer(3, true, 'C) Fold them slightly up (dihedral)')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">C) Fold them slightly up (dihedral)</button>
+          </div>
+          <p id="feedback3" class="mt-2 text-sm font-semibold"></p>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Day 3 Assignment & Design Log</h4>
+        <div class="mt-6 space-y-6">
+          <div>
+            <label class="block font-semibold text-gray-800">1. Select Your Best Design</label>
+            <p class="text-sm text-gray-500 mb-2">Based on your observations from Day 2, which prototype are you choosing to improve? Why did you choose it?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="I am choosing Prototype #... because it was the most..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">2. Plan Your Iteration</label>
+            <p class="text-sm text-gray-500 mb-2">What is the ONE variable you will change to create Version 2? Why do you think this change will improve flight distance?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="I will change... I think this will help because..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">3. Collect Quantitative Data</label>
+            <p class="text-sm text-gray-500 mb-2">Create a data table and record the flight distance for 3 throws of V1 and 3 throws of V2. Compute averages.</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="5" placeholder="Version 1 - Throw 1: ___ cm ... Average: ___ cm.&#10;Version 2 - Throw 1: ___ cm ... Average: ___ cm."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">4. Analyze Your Data</label>
+            <p class="text-sm text-gray-500 mb-2">Did your change work? Use the averages.</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="My change was/was not successful because..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">5. Log Your Iteration</label>
+            <p class="text-sm text-gray-500 mb-2">Upload a photo showing Version 1 and Version 2 side-by-side.</p>
+            <input type="file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100"/>
+          </div>
+        </div>
+        <div class="mt-8 text-right">
+          <button class="next-day-btn bg-green-600 text-white font-bold py-2 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300">Save & Continue to Day 4</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="airplane-day4-page" class="hidden bg-gray-50 py-12 sm:py-20">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="mb-8">
+        <a href="#" class="back-to-main inline-flex items-center text-indigo-600 hover:text-indigo-800 font-semibold">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+          Back to Project Hub
+        </a>
+      </div>
+      <div class="text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900">Paper Airplane Challenge</h2>
+        <h3 class="text-2xl font-bold text-gray-800 p-4 bg-green-100 rounded-lg mt-4">Day 4: Finalize & Reflect</h3>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Today's Objectives (TEKS §130.364)</h4>
+        <ul class="mt-2 list-disc list-inside text-gray-700">
+          <li>Create a final, optimized product based on all collected data. (c)(1)(I)</li>
+          <li>Communicate the results and reflect on the design process. (c)(1)(J)</li>
+        </ul>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Concept 1: The Design Process - "Finalize & Communicate"</h4>
+        <p class="mt-2 text-gray-700">
+          The final steps are to create your best possible product and then <strong>"Communicate"</strong> your results.
+          Summarize your data, explain your choices, and reflect on what you learned.
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Concept 2: Combining Design Elements</h4>
+        <p class="mt-2 text-gray-700">
+          Great innovation often comes from combining existing ideas. Maybe Prototype #1 had very stable wings, but Prototype #3 had a sleek, fast nose.
+          For your final design (Version 3), don't be afraid to create a hybrid!
+        </p>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Knowledge Check!</h4>
+        <div id="quiz4">
+          <p class="mt-2 text-gray-700">What is the final step of the engineering design process?</p>
+          <div class="mt-2 space-y-2">
+            <button onclick="checkAnswer(4, false, 'A) Testing')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">A) Testing</button>
+            <button onclick="checkAnswer(4, true, 'B) Communicating Results')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">B) Communicating Results</button>
+            <button onclick="checkAnswer(4, false, 'C) Building a Prototype')" class="quiz-btn block w-full text-left p-2 border rounded hover:bg-gray-100">C) Building a Prototype</button>
+          </div>
+          <p id="feedback4" class="mt-2 text-sm font-semibold"></p>
+        </div>
+      </div>
+
+      <div class="mt-8 bg-white p-6 rounded-lg shadow-md">
+        <h4 class="text-xl font-bold text-green-600">Day 4 Assignment & Design Log</h4>
+        <div class="mt-6 space-y-6">
+          <div>
+            <label class="block font-semibold text-gray-800">1. Plan Your Champion</label>
+            <p class="text-sm text-gray-500 mb-2">Describe your plan for Version 3. What successful elements are you keeping or combining?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="For my final version, I will use the wings from Version... and the nose from Version... because..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">2. Final Test Results</label>
+            <p class="text-sm text-gray-500 mb-2">Build and test your final champion plane (Version 3). Record three throws and average.</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="Version 3 - Throw 1: ___ cm, Throw 2: ___ cm, Throw 3: ___ cm. Average: ___ cm."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">3. Final Analysis</label>
+            <p class="text-sm text-gray-500 mb-2">Was Version 3 your best? Compare averages.</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="2" placeholder="Version 3 was/was not my best design. Its average distance was..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">4. Final Reflection</label>
+            <p class="text-sm text-gray-500 mb-2">What is the single most important thing you learned? What would you try next?</p>
+            <textarea class="w-full p-2 border border-gray-300 rounded-md" rows="3" placeholder="I learned that... Next, I would try to..."></textarea>
+          </div>
+          <div>
+            <label class="block font-semibold text-gray-800">5. Log Your Champion</label>
+            <p class="text-sm text-gray-500 mb-2">Upload a photo of your final, champion airplane (Version 3).</p>
+            <input type="file" class="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100"/>
+          </div>
+        </div>
+        <div class="mt-8 text-right">
+          <button class="bg-indigo-600 text-white font-extrabold py-3 px-8 rounded-lg shadow-lg hover:bg-indigo-700 transition duration-300 text-lg">Compile & Submit My Report</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white">...</footer>
+
+  <script>
+    // --- Page Navigation ---
+    const mainContentContainer = document.getElementById('main-content-container');
+    const subPages = {
+      designProcess: document.getElementById('design-process-page'),
+      simpleMachines: document.getElementById('simple-machines-page'),
+      circuits: document.getElementById('circuits-page'),
+      airplaneDay1: document.getElementById('airplane-day1-page'),
+      airplaneDay2: document.getElementById('airplane-day2-page'),
+      airplaneDay3: document.getElementById('airplane-day3-page'),
+      airplaneDay4: document.getElementById('airplane-day4-page'),
+    };
+
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    function hideAllPages() {
+      mainContentContainer.classList.add('hidden');
+      for (const key in subPages) {
+        if (subPages[key]) subPages[key].classList.add('hidden');
+      }
+    }
+
+    function showPage(pageKey) {
+      hideAllPages();
+      if (pageKey === 'main') {
+        mainContentContainer.classList.remove('hidden');
+      } else if (subPages[pageKey]) {
+        subPages[pageKey].classList.remove('hidden');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // --- Event Listeners ---
+    const ldp = document.getElementById('learn-design-process-link');
+    if (ldp) ldp.addEventListener('click', (e) => { e.preventDefault(); showPage('designProcess'); });
+    const lsm = document.getElementById('learn-simple-machines-link');
+    if (lsm) lsm.addEventListener('click', (e) => { e.preventDefault(); showPage('simpleMachines'); });
+    const lc = document.getElementById('learn-circuits-link');
+    if (lc) lc.addEventListener('click', (e) => { e.preventDefault(); showPage('circuits'); });
+
+    const startBtn = document.getElementById('start-airplane-project-btn');
+    if (startBtn) startBtn.addEventListener('click', (e) => { e.preventDefault(); showPage('airplaneDay1'); });
+
+    // Airplane Day Navigation
+    const d1Next = subPages.airplaneDay1?.querySelector('.next-day-btn');
+    if (d1Next) d1Next.addEventListener('click', () => showPage('airplaneDay2'));
+    const d2Next = subPages.airplaneDay2?.querySelector('.next-day-btn');
+    if (d2Next) d2Next.addEventListener('click', () => showPage('airplaneDay3'));
+    const d3Next = subPages.airplaneDay3?.querySelector('.next-day-btn');
+    if (d3Next) d3Next.addEventListener('click', () => showPage('airplaneDay4'));
+
+    // Back to Main Links
+    document.querySelectorAll('.back-to-main').forEach(link => {
+      link.addEventListener('click', (e) => { e.preventDefault(); showPage('main'); });
+    });
+
+    // Main Navigation Links (when you're on a subpage)
+    navLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        const targetId = link.getAttribute('href');
+        if (mainContentContainer.classList.contains('hidden')) {
+          e.preventDefault();
+          showPage('main');
+          setTimeout(() => {
+            const target = document.querySelector(targetId);
+            if (target) target.scrollIntoView({ behavior: 'smooth' });
+          }, 0);
+        }
+      });
+    });
+
+    // --- Mobile Menu ---
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuLinks = mobileMenu.querySelectorAll('a.nav-link');
+
+    mobileMenuButton.addEventListener('click', () => {
+      const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
+      mobileMenuButton.setAttribute('aria-expanded', String(!isExpanded));
+      mobileMenu.classList.toggle('hidden');
+      mobileMenuButton.querySelector('svg:first-child').classList.toggle('hidden');
+      mobileMenuButton.querySelector('svg:last-child').classList.toggle('hidden');
+    });
+
+    mobileMenuLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) mobileMenuButton.click();
+      });
+    });
+
+    // --- Interactive Quiz Logic ---
+    function checkAnswer(quizNum, isCorrect, answer) {
+      const feedbackEl = document.getElementById(`feedback${quizNum}`);
+      const quizEl = document.getElementById(`quiz${quizNum}`);
+      if (!quizEl) return;
+      const buttons = quizEl.querySelectorAll('.quiz-btn');
+
+      buttons.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.remove('hover:bg-gray-100');
+        if (btn.textContent === answer) {
+          btn.classList.add(isCorrect ? 'bg-green-200' : 'bg-red-200');
+        }
+      });
+
+      if (feedbackEl) {
+        feedbackEl.textContent = isCorrect
+          ? "Correct! Great job."
+          : "Not quite. Review the concept and try to understand why that wasn't the best answer.";
+        feedbackEl.className = "mt-2 text-sm font-semibold " + (isCorrect ? "text-green-600" : "text-red-600");
+      }
+    }
+    // Expose for inline onClick
+    window.checkAnswer = checkAnswer;
+  </script>
+
+</body>
+</html>
