@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>EngageHub</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>EngageHub Progress</h1>
+
+  <div class="bar">
+    <div class="small" id="whoami">Not signed in</div>
+    <div>
+      <button id="signin" class="btn primary">Sign in with Google</button>
+      <button id="signout" class="btn" style="display:none">Sign out</button>
+    </div>
+  </div>
+
+  <div id="err" class="error" style="display:none"></div>
+
+  <div id="tasks"></div>
+
+  <div class="footer">
+    <button id="reset" class="btn">Reset</button>
+    <a id="open-site" href="#" class="btn">Open Website</a>
+  </div>
+
+  <script type="module" src="./popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "EngageHub Progress (Firebase)",
+  "version": "0.1.0",
+  "description": "Track & unlock steps with Google Sign-In and Firestore.",
+  "action": {
+    "default_title": "EngageHub",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://*.googleapis.com/*",
+    "https://*.firebaseio.com/*",
+    "https://securetoken.googleapis.com/*"
+  ],
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  }
+}
